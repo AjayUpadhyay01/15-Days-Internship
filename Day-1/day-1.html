@@ -1,0 +1,348 @@
+<html>
+
+<head>
+    <title> Day-1 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    
+     {
+    box-sizing: border-box;
+}
+
+.title {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tittxt {
+    font-family: sans-serif;
+    color: #3399ff;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+td {
+    padding: 10px;
+}
+
+a.email:link {
+    color: #808080;
+    text-decoration: none;
+}
+
+a.email:hover {
+    color: lightcoral;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, .03);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.email2 {
+    opacity: 0.8;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, .1);
+    color: #4d4d4d;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.subtit {
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.design {
+    position: relative;
+    top: -100px;
+    z-index: -1;
+    margin-bottom: -180px;
+    opacity: 0.4;
+}
+
+
+ul.email {
+    list-style-type: none;
+}
+
+li.email {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: -35px;
+    margin-right: 50px;
+}
+
+hr.main {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    margin: 0px;
+    margin-top: 1px;
+    border:2px solid black;
+}
+
+hr.sec {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    
+}
+
+.flex-container > div {
+    background-color: #f2f2f2;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+h2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+hr.heading {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border: 1px solid #3399ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    margin-left: 3vw;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=tel],
+
+        select {
+    width: 20vw;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+    width: 20vw;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f2f2f2;
+    border-radius: 125px;
+     cursor: pointer;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+td {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+.gender {
+    font-family: monospace;
+    padding: 5px;
+    margin-right: 20px;
+    color: #404040;
+    cursor: pointer;
+}
+
+.hobbies {
+    font-family: monospace;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 20px;
+    color: #404040;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+.end {
+    text-align: center;
+}
+
+input[type=submit],
+input[type=reset] 
+{
+    width: 15vw;
+    padding: 10px 20px;
+    margin: 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #808080;
+    color: #f2f2f2;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow:  3px 2px 5px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+input[type=file] 
+{
+     cursor: pointer;
+}
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="title">
+
+        <table align="center">
+            <tr>
+                <td><img src="logo.png" class="logo" height="100px"> </td>
+                <td>
+                    <p class="tittxt"><b> Goverment Engineering College, Modasa </b> </p>
+                    <ul class="email">
+                        <table align="left" class="abc">
+                            <li class="email">
+                                <tr>
+                                    <td class="acb"><img src="logo.png" height=20px class="email2"></td>
+                                    <td> <a href="gec-modasa-dte@gujarat.gov.in" class="email" > gec-modasa-dte@gujarat.gov.in </a></td>
+                                </tr>
+                            </li>     
+                        </table>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr class="main">
+
+
+    <div class="flex-container">
+        <div style="flex-basis:5000px">
+            <h2>Registration Form</h2>
+            <hr class="heading">
+
+            <form action="/Prac5.php" method="post">
+                <table>
+
+                    <tr>
+                        <td><label for="fname"> First Name :- </label></td>
+                        <td> <input type="text" height=100px id="fname" name="fname" placeholder="Enter your first name..." required> </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="lname"> Last Name :- </label></td>
+                        <td> <input type="text" id="lname" name="lname" placeholder="Enter your last name..." required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email"> Email :- </label> </td>
+                        <td><input type="email" id="email" name="email" placeholder="Enter your Email ID" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="number"> Mobile Number :- </label> </td>
+                        <td><input type="tel" id="number" name="number" placeholder="Enter your Phone no." pattern="[0-9]{10}"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob"> Date of Birth :- </label> </td>
+                        <td><input type="date" id="dob" name="dob"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label> Gender :- </label> </td>
+                        <td>
+                            <input type="radio" id="male" name="gender"><label for="male" class="gender"> Male </label>
+                            <input type="radio" id="female" name="gender"><label for="female" class="gender"> Female </label>
+                            <input type="radio" id="other" name="gender"><label for="other" class="gender"> Other </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="address"> Address :- </label> </td>
+                        <td><textarea id="address" name="address" placeholder="Enter your address..."></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="city"> City :- </label> </td>
+                        <td> <select id="city" name="city">
+                                <option value="Ahmedadbad">Ahmedabad</option>
+                                <option value="Gandhinagar">Gandhinagar</option>
+                                <option value="Modasa">Modasa</option>
+                                <option value="Surat">Surat</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label> Hobbies :- </label> </td>
+                        <td>
+                            <input type="checkbox" id="Filmmaking" name="hobbies"><label for="Filmmaking" class="hobbies"> Filmmaking </label>
+                            <input type="checkbox" id="Coding" name="hobbies"><label for="Coding" class="hobbies"> Coding </label>
+                            <input type="checkbox" id="Singing" name="hobbies"><label for="Singing" class="hobbies"> Singing </label><br>
+                            <input type="checkbox" id="Dancing" name="hobbies"><label for="Dancing" class="hobbies"> Dancing </label>
+                            <input type="checkbox" id="Gaming" name="hobbies"><label for="Gaming" class="hobbies"> Gaming </label>
+                            <input type="checkbox" id="Reading" name="hobbies"><label for="Reading" class="hobbies"> Reading </label><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="image"> Image :- </label> </td>
+                        <td>
+                            <input type="file" id="image" name="image">
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div class="end">
+                    <input type="submit" value="Submit" name="submit">
+                    <input type="reset" value="Reset" name="reset">
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
