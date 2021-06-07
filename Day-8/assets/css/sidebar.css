@@ -1,0 +1,60 @@
+  .header {
+    background-color: #33ccc5;
+    padding: 0px 10px;
+    box-shadow: none;
+    text-align: center;
+    z-index: 10;
+      position: absolute;
+  }
+
+.sidebarIconToggle{
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 20;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+   
+#sidebarmenu{
+    
+   
+    position: fixed;
+    left: 0;
+
+    width: 100px;
+    background: transparent;
+    margin-top: 80px;
+    transform: translateX(-250px);
+    transition: transform 300ms ease-in-out;
+}
+
+#openbarmenu:checked ~ #sidebarmenu{
+    
+     transform: translateX(0px);
+    
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.menu li a{
+    
+    color: #33ccc5 ;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 5px;
+    
+}
